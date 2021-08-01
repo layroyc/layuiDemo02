@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="layuiDemo/layui-v2.5.6/layui/layui.js"></script>
+    <link rel="stylesheet" href="layuiDemo/layui-v2.5.6/layui/css/layui.css">
+    
+</head>
+<body>
+    
+    <button type="button" class="layui-btn layui-btn-warm">我是layui，我是危险的按钮，是红色的</button>
+    <button type="button" class="layui-btn layui-btn-danger">默认红色按钮</button>
+    <button type="button" class="layui-btn layui-btn-disabled">默认按钮</button>
+    <div class="layui-btn-group">
+      <button type="button" class="layui-btn">增加</button>
+    <button type="button" class="layui-btn">编辑</button>
+    <button type="button" class="layui-btn">删除</button>
+    </div>
+
+    <script>
+        layui.use(['layer','form'],function(){
+            var layer = layui.layer;
+            var form = layui.form;
+            layer.msg('我是弹窗！！')
+        });
+    </script>
+</body>
+</html>
